@@ -1,0 +1,51 @@
+.footer {
+  background-color: black;
+}
+
+.footer .box-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2.2rem;
+  color: var(--white);
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.footer .box-container a,
+.footer .box-container p {
+  font-size: 1.7rem;
+  color: var(--light-color);
+  padding: 1rem 0;
+  display: block;
+}
+
+.footer .box-container a i,
+.footer .box-container p i {
+  color: var(--blue);
+  padding-right: 1rem;
+}
+
+.footer .box-container a:hover {
+  text-decoration: underline;
+  color: var(--blue);
+}
+
+.footer .credit {
+  text-align: center;
+  padding-top: 2.5rem;
+  margin-top: 2.5rem;
+  border-top: var(--border);
+  font-size: 2rem;
+  color: var(--light-color);
+}
+
+.footer .credit span {
+  color: var(--blue);
+}

@@ -1,0 +1,117 @@
+/* Improved search form styling */
+.search-form {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.search-form form {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+}
+
+.search-form .box {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.search-form .btn {
+  width: 20%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+}
+
+.search-form .btn:hover {
+  background-color: #218838;
+}
+
+/* Product cards */
+.products .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 20px 0;
+  padding: 0 20px;
+}
+
+.products .box {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.products .box:hover {
+  transform: translateY(-5px);
+}
+
+.products .box img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.products .price {
+  font-size: 20px;
+  color: #28a745;
+  font-weight: bold;
+}
+
+.products .name {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.products .qty {
+  width: 50px;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.products .btn,
+.products .option-btn {
+  padding: 10px 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.products .option-btn {
+  background-color: #ffc107;
+  color: white;
+}
+
+.products .option-btn:hover {
+  background-color: #e0a800;
+}
+
+.products .btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.products .btn:hover {
+  background-color: #218838;
+}
+
+/* Empty message */
+.empty {
+  text-align: center;
+  font-size: 18px;
+  color: #999;
+}

@@ -1,0 +1,80 @@
+/* body,
+html {
+  height: 100%;
+  margin: 0;
+
+} */
+
+.quick-view {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quick-view .title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.quick-view .image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.quick-view .name {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.quick-view .price {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.quick-view .details {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #666;
+}
+
+.quick-view .qty {
+  width: 60px;
+  padding: 5px;
+  margin: 20px auto; /* Center the input box */
+  display: block; /* Force to a new line */
+}
+
+.quick-view .btn,
+.quick-view .option-btn {
+  display: block;
+  width: 200px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.quick-view .btn:hover,
+.quick-view .option-btn:hover {
+  background-color: #2980b9;
+}
+
+.quick-view .more-btn {
+  margin-top: 20px;
+}

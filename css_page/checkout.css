@@ -1,0 +1,78 @@
+.flex2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.inputBox {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputBox span {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.inputBox input,
+.inputBox select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.inputBox input:focus,
+.inputBox select:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+.grand-total {
+  text-align: center;
+  font-size: 18px;
+  color: #444;
+  /* margin-top: 15px; */
+}
+
+.grand-total span {
+  font-size: 22px;
+  color: #e91e63;
+}
+
+.btn {
+  background-color: #e91e63;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #c2185b;
+}
+
+/* Payment method specific styles */
+#credit-card-info,
+#paypal-info {
+  display: none;
+}
+
+.credit-card-info,
+.paypal-info {
+  padding: 10px;
+  background-color: #e3f2fd;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.credit-card-info input,
+.paypal-info input {
+  margin-top: 10px;
+}

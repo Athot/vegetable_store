@@ -1,0 +1,117 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  z-index: 1000;
+  box-shadow: var(--box-shadow);
+}
+/* var(--blue); */
+.header .flex {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  max-width: 1200px;
+  position: relative;
+}
+
+/* peimiso */
+
+.logo {
+  width: 200px;
+}
+
+.header .flex .navbar ul {
+  list-style: none;
+}
+
+.header .flex .navbar ul li {
+  float: left;
+  position: relative;
+}
+
+.header .flex .navbar ul li a {
+  font-size: 2rem;
+  padding: 1rem 1.5rem;
+  display: block;
+  color: var(--white);
+  text-transform: capitalize;
+}
+
+.header .flex .navbar ul li a:hover {
+  background-color: red;
+  color: var(--white);
+}
+
+.header .flex .navbar ul li ul {
+  position: absolute;
+  left: 0;
+  width: 15rem;
+  background-color: var(--white);
+  animation: fadeIn 0.2s linear;
+  display: none;
+}
+
+.header .flex .navbar ul li ul li {
+  width: 100%;
+}
+
+.header .flex .navbar ul li:hover ul {
+  display: inline-block;
+}
+
+.header .flex .icons > * {
+  font-size: 2.5rem;
+  margin-left: 2rem;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.header .flex .icons > *:hover {
+  color: var(--pink);
+}
+
+.header .flex .icons span {
+  font-size: 2rem;
+}
+
+#menu-btn {
+  display: none;
+}
+
+.header .flex .account-box {
+  position: absolute;
+  top: 120%;
+  right: 2rem;
+  background-color: var(--white);
+  border: var(--border);
+  text-align: center;
+  box-shadow: var(--box-shadow);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  width: 33rem;
+  display: none;
+  animation: fadeIn 0.2s linear;
+}
+
+.header .flex .account-box.active {
+  display: block;
+}
+
+.header .flex .account-box p {
+  padding-bottom: 1rem;
+  font-size: 2rem;
+  color: var(--light-color);
+  line-height: 1.5;
+}
+
+.header .flex .account-box p span {
+  color: var(--pink);
+}
+
+.header .flex .account-box .delete-btn {
+  margin-top: 0.5rem;
+}
